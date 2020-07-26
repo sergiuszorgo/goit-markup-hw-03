@@ -11,7 +11,9 @@ html {
 :root {
   --primary-text-color: #757575;
   --accent-color: #2196f3;
+  --backgroun-color: #f5f4fa;
   --primary-white-color: #ffffff;
+  --second-white-color: rgba(255, 255, 255, 0.6);
   --primary-title-color: #212121;
   --primary-card-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -72,9 +74,10 @@ body {
 .site-nav .navi-item + .navi-item {
   margin-left: 50px;
 }
-.navi-item {
+
+/* .navi-item {
   outline: 1px solid tomato;
-}
+} */
 
 .navi-list {
   margin-left: 85px;
@@ -108,8 +111,8 @@ body {
   margin-left: auto;
 }
 
-.contact-list .contact-item + .contact-item {
-  margin-left: 30;
+.contact-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .addres-link {
@@ -179,6 +182,15 @@ body {
 
 .feature-list {
   padding: 0px;
+  margin: 0px;
+}
+
+.backplate {
+  display: block;
+  background-color: var(--backgroun-color);
+  padding: 25px 100px;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .features .feature-item + .feature-item {
@@ -208,6 +220,24 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-title-color);
+}
+/* ПОРТФОЛИО */
+
+.button-list {
+  justify-content: center;
+}
+
+.portpholio-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+}
+
+.portpholio-card {
+  width: calc((100% - (2 * 30px)) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
@@ -321,9 +351,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+/* П О Д В А Л */
 
 .foot {
   background: #2f303a;
+}
+.foot .container {
+  padding: 60px 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addres-list {
+  list-style: none;
+  padding-left: 0px;
 }
 
 .bottom-logo {
@@ -340,8 +381,24 @@ body {
   color: var(--primary-white-color);
 }
 .addres-item {
+  color: var(--primary-white-color);
+}
+
+.address {
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: var(--primary-white-color);
+}
+
+.addres-contact {
+  color: var(--second-white-color);
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0px;
+  margin-top: 20px 0 0;
 }

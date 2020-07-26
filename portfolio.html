@@ -17,12 +17,13 @@
   <body class="web-studio">
     <header>
       <!-- Навигация -->
-      <div class="container">
+
+      <div class="container site-header">
         <nav class="site-nav">
           <a href="./index.html" class="logo link"
             >Web <span class="logo-color">Studio</span>
           </a>
-          <ul class="navi">
+          <ul class="navi navi-list">
             <li class="navi-item">
               <a href="./index.html" class="navi-link link">Студия</a>
             </li>
@@ -35,30 +36,33 @@
               <a href="" class="navi-link link">Контакты</a>
             </li>
           </ul>
-          <ul class="navi">
-            <li>
-              <a href="/" class="addres-link link"
-                ><img
-                  src="./images/envelope.svg"
-                  alt="Почта"
-                />info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="/" class="addres-link link"
-                ><img src="./images/smartphone.svg" alt="Телефон" />+38 096 111
-                11 11</a
-              >
-            </li>
-          </ul>
         </nav>
+
+        <!-- АДРЕС -->
+
+        <ul class="navi contact-list">
+          <li class="contact-item">
+            <a href="/" class="addres-link link"
+              ><img
+                src="./images/envelope.svg"
+                alt="Почта"
+              />info@devstudio.com</a
+            >
+          </li>
+          <li class="navi contact-item">
+            <a href="/" class="addres-link link"
+              ><img src="./images/smartphone.svg" alt="Телефон" />+38 096 111 11
+              11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
     <!-- КНОПКИ ФИЛЬТРА -->
     <section class="container">
-      <h1>Портфолио</h1>
-      <ul class="navi">
+      <h1 class="tecnology-title">Портфолио</h1>
+      <ul class="navi button-list">
         <li><button type="button" class="btn">Все</button></li>
         <li><button type="button" class="btn">Веб-сайты</button></li>
         <li><button type="button" class="btn">Приложения</button></li>
@@ -70,15 +74,15 @@
     <!-- ГАЛЕРЕЯ -->
     <section>
       <div class="container">
-        <ul class="navi">
-          <li>
+        <ul class="portpholio-list">
+          <li class="portpholio-card">
             <a href="" class="link">
               <img src="./images/laptop.png" width="370" alt="Ноутбук" />
               <h3 class="gallery">Технокряк</h3>
               <p class="gallery-description">Веб-сайт</p>
             </a>
           </li>
-          <li>
+          <li class="portpholio-card">
             <a href="" class="link">
               <img
                 src="./images/sport.png"
@@ -89,7 +93,7 @@
               <p class="gallery-description">Дизайн</p>
             </a>
           </li>
-          <li>
+          <li class="portpholio-card">
             <a href="" class="link">
               <img
                 src="./images/fish.png"
@@ -100,14 +104,14 @@
               <p class="gallery-description">Приложение</p>
             </a>
           </li>
-          <li>
+          <li class="portpholio-card">
             <a href="" class="link">
               <img src="./images/headphones.png" width="370" alt="Наушники" />
               <h3 class="gallery">Проект Prime</h3>
               <p class="gallery-description">Маркетинг</p>
             </a>
           </li>
-          <li>
+          <li class="portpholio-card">
             <a href="" class="link">
               <img
                 src="./images/boxes.png"
@@ -118,21 +122,21 @@
               <p class="gallery-description">Приложение</p>
             </a>
           </li>
-          <li>
+          <li class="portpholio-card">
             <a href="" class="link">
               <img src="./images/monitor.png" width="370" alt="Монитор" />
               <h3 class="gallery">Inspiration has no Borders</h3>
               <p class="gallery-description">Веб-сайт</p>
             </a>
           </li>
-          <li>
+          <li class="portpholio-card">
             <a href="" class="link">
               <img src="./images/book.png" width="370" alt="открытая книга" />
               <h3 class="gallery">Издание Limited Edition</h3>
               <p class="gallery-description">Дизайн</p>
             </a>
           </li>
-          <li>
+          <li class="portpholio-card">
             <a href="" class="link">
               <img
                 src="./images/labeltag.png"
@@ -143,7 +147,7 @@
               <p class="gallery-description">Маркетинг</p>
             </a>
           </li>
-          <li>
+          <li class="portpholio-card">
             <a href="" class="link">
               <img
                 src="./images/nout.png"
@@ -161,73 +165,80 @@
     <!--подвал-->
     <footer class="foot">
       <div class="container">
-        <a href="index.html" class="bottom-logo"
-          >Web <span class="bottom-logo-color">Studio</span>
-        </a>
-        <address>
-          <ul class="navi">
+        <div>
+          <a href="index.html" class="bottom-logo"
+            >Web <span class="bottom-logo-color">Studio</span>
+          </a>
+          <address class="address">
+            <ul class="addres-list">
+              <li>
+                <a
+                  href="https://goo.gl/maps/2EUn389jbwumqFo99"
+                  class="addres-item link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                ><br />
+              </li>
+              <li>
+                <a href="mailto:info@example.com" class="addres-contact link"
+                  >info@example.com</a
+                ><br />
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="addres-contact link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="address-list">
+          <b class="business">присоединяйтесь</b>
+          <ul class="social">
             <li>
               <a
-                href="https://goo.gl/maps/2EUn389jbwumqFo99"
-                class="addres-item link"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              ><br />
-            </li>
-            <li>
-              <a href="mailto:info@example.com" class="addres-item link"
-                >info@example.com</a
-              ><br />
-            </li>
-            <li>
-              <a href="tel:+380991111111" class="addres-item link"
-                >+38 099 111 11 11</a
+                href="https://instagramm.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                area-label="Instagramm"
               >
+                <img src="./images/instagram_white.svg" alt="Instagramm" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twittwr.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                area-label="Twitter"
+              >
+                <img src="./images/twitter_white.svg" alt="Twitter" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                area-label="Facebook"
+              >
+                <img src="./images/facebook_white.svg" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                area-label="Linkedin"
+              >
+                <img src="./images/linkedin_white.svg" alt="Linkedin" />
+              </a>
             </li>
           </ul>
-        </address>
-        <b class="business">присоединяйтесь</b>
-        <ul class="navi">
-          <li>
-            <a
-              href="https://instagramm.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              area-label="Instagramm"
-            >
-              <img src="./images/instagram_white.svg" alt="Instagramm" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twittwr.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              area-label="Twitter"
-            >
-              <img src="./images/twitter_white.svg" alt="Twitter" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              area-label="Facebook"
-            >
-              <img src="./images/facebook_white.svg" alt="Facebook" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              area-label="Linkedin"
-            >
-              <img src="./images/linkedin_white.svg" alt="Linkedin" />
-            </a>
-          </li>
-        </ul>
+        </div>
+        <div>
+          <b class="business">Подпишитесь на рассылку</b>
+        </div>
       </div>
     </footer>
   </body>
