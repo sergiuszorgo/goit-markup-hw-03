@@ -269,11 +269,16 @@ body {
   box-shadow: var(--primary-card-shadow);
 }
 
+.team-image {
+  margin-bottom: 30px;
+}
+
 .people {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin: 0 0 10px;
   color: var(--primary-title-color);
 }
 
@@ -282,8 +287,26 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
+.soсial-link {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 16px 32px 24px;
+}
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+.clients .container {
+  padding: 94px 0 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+/* Г А Л Е Р ЕЯ */
 .gallery {
   font-weight: bold;
   font-size: 18px;
