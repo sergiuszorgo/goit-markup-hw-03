@@ -30,6 +30,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 .site-header {
   display: flex;
   align-items: center;
