@@ -17,23 +17,29 @@
   <body class="web-studio">
     <header>
       <!-- Навигация -->
-      <nav class="container">
-        <a href="./index.html" class="logo link"
-          >Web <span class="logo-color">Studio</span>
-        </a>
-        <ul class="navi">
-          <li class="navi-item">
-            <a href="" class="navi-link link">Студия</a>
-          </li>
-          <li class="navi-item">
-            <a href="./portfolio.html" class="navi-link link">Портфолио</a>
-          </li>
-          <li class="navi-item">
-            <a href="" class="navi-link link">Контакты</a>
-          </li>
-        </ul>
-        <ul class="navi">
-          <li>
+
+      <div class="container site-header">
+        <nav class="site-nav">
+          <a href="./index.html" class="logo link"
+            >Web <span class="logo-color">Studio</span>
+          </a>
+          <ul class="navi navi-list">
+            <li class="navi-item">
+              <a href="" class="navi-link link current">Студия</a>
+            </li>
+            <li class="navi-item">
+              <a href="./portfolio.html" class="navi-link link">Портфолио</a>
+            </li>
+            <li class="navi-item">
+              <a href="" class="navi-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- АДРЕС -->
+
+        <ul class="navi contact-list">
+          <li class="contact-item">
             <a href="/" class="addres-link link"
               ><img
                 src="./images/envelope.svg"
@@ -41,14 +47,14 @@
               />info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="navi contact-item">
             <a href="/" class="addres-link link"
               ><img src="./images/smartphone.svg" alt="Телефон" />+38 096 111 11
               11</a
             >
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
     <!-- Главный -->
@@ -64,10 +70,10 @@
 
     <!-- Технологии -->
     <section>
-      <div class="container">
-        <h2>ТЕХНОЛОГИИ</h2>
-        <ul class="navi">
-          <li>
+      <div class="container features">
+        <h2 class="tecnology-title">ТЕХНОЛОГИИ</h2>
+        <ul class="navi feature-list">
+          <li class="feature-item">
             <img src="./images/antenna1.svg" alt="" />
             <h3 class="tech">Внимание к деталям</h3>
             <p>
@@ -75,7 +81,7 @@
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <img src="./images/clock1.svg" alt="" />
             <h3 class="tech">Пунктуальность</h3>
             <p>
@@ -83,7 +89,7 @@
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <img src="./images/diagram1.svg" alt="" />
             <h3 class="tech">Планирование</h3>
             <p>
@@ -91,7 +97,7 @@
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <img src="./images/astronaut1.svg" alt="" />
             <h3 class="tech">Современные технологии</h3>
             <p>
@@ -107,17 +113,32 @@
     <section>
       <div class="container">
         <h2 class="desstr">Чем мы занимаемся</h2>
-        <ul class="navi">
+        <ul class="navi business-items">
           <li>
-            <img src="./images/nout.png" alt="Ноутбук" width="370" />
+            <img
+              src="./images/nout.png"
+              class="busi-img"
+              alt="Ноутбук"
+              width="370"
+            />
             <h3 class="business">Десктопные приложения</h3>
           </li>
           <li>
-            <img src="./images/tele.png" alt="Смартфон" width="370" />
+            <img
+              src="./images/tele.png"
+              class="busi-img"
+              alt="Смартфон"
+              width="370"
+            />
             <h3 class="business">Мобильные приложения</h3>
           </li>
           <li>
-            <img src="./images/monitor.png" alt="Монитор" width="370" />
+            <img
+              src="./images/monitor.png"
+              class="busi-img"
+              alt="Монитор"
+              width="370"
+            />
             <h3 class="business">Дизайнерские решения</h3>
           </li>
         </ul>
@@ -129,7 +150,7 @@
       <div class="container">
         <h2 class="desstr">Наша команда</h2>
         <ul class="navi">
-          <li>
+          <li class="team-card">
             <img
               src="./images/Nikolay.jpg"
               alt="фото Николай Кучеренко"
@@ -160,7 +181,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="team-card">
             <img src="./images/Olga.jpg" alt="фото Ольга Иванова" />
             <h3 class="people">Ольга Иванова</h3>
             <p class="people-description">Frontend Developer</p>
@@ -187,7 +208,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="team-card">
             <img src="./images/Andrey.jpg" alt=" фото Андрей Шевченко" />
             <h3 class="people">Андрей Шевченко</h3>
             <p class="people-description">Marketing</p>
@@ -214,7 +235,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="team-card">
             <img src="./images/Ivan.jpg" alt="фото Иван Николаев" />
             <h3 class="people">Иван Николаев</h3>
             <p class="people-description">UI Designer</p>

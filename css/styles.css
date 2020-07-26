@@ -13,6 +13,8 @@ html {
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --primary-title-color: #212121;
+  --primary-card-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 /* font-family: 'Raleway', sans-serif;
@@ -24,6 +26,11 @@ body {
   letter-spacing: 0.03em;
 }
 
+.site-header {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -32,6 +39,23 @@ body {
   padding-right: 15px;
 }
 
+.logo-nav {
+  display: flex;
+  align: center;
+}
+
+.navi {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -45,12 +69,23 @@ body {
   color: #000000;
 }
 
-.navi {
-  list-style: none;
+.site-nav .navi-item + .navi-item {
+  margin-left: 50px;
+}
+.navi-item {
+  outline: 1px solid tomato;
+}
+
+.navi-list {
+  margin-left: 85px;
+  padding: 0px;
 }
 
 .link {
   text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .navi-link {
@@ -62,8 +97,19 @@ body {
 }
 
 .link:hover,
-.link:focus {
+.link:focus,
+.current {
   color: var(--accent-color);
+}
+/* КОНТАКТЫ */
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list .contact-item + .contact-item {
+  margin-left: 30;
 }
 
 .addres-link {
@@ -73,7 +119,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
+/* КНОПКА */
 .btn {
   font-weight: 500;
   font-size: 16px;
@@ -126,6 +172,33 @@ body {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
+/* ТЕХНОЛОГИИ */
+.features {
+  padding: 94px 0;
+}
+
+.feature-list {
+  padding: 0px;
+}
+
+.features .feature-item + .feature-item {
+  margin-left: 30px;
+}
+
+.tecnology-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .tech {
   margin-top: 0;
   margin-bottom: 10px;
@@ -136,7 +209,20 @@ body {
   text-transform: uppercase;
   color: var(--primary-title-color);
 }
+
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.business-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 94px;
+}
+
 .desstr {
+  padding: 0px;
+  margin: 0 0 50px;
+  text-align: center;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.67;
@@ -149,12 +235,40 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-white-color);
 }
+
+.busi-img {
+  display: block;
+}
+
+/* НАША КОММАНДА */
 
 .team {
   background: #f5f4fa;
 }
+
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team .navi {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.team-card {
+  background-color: var(--tprimary-white-color);
+  line-height: 1.19;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--primary-card-shadow);
+}
+
 .people {
   font-weight: 500;
   font-size: 16px;
