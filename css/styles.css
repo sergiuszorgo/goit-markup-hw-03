@@ -326,7 +326,7 @@ ul {
 }
 
 .team-card {
-  background-color: var(--tprimary-white-color);
+  background-color: var(--primary-white-color);
   line-height: 1.19;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
@@ -336,6 +336,20 @@ ul {
 .team-image {
   margin-bottom: 30px;
 }
+/* ИКОНКИ */
+/* .social-page {
+  display: inline-block;
+  align-items: center;
+  background-color: var(--rimary-white-color);
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.social-page:hover,
+.social-page:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+} */
 
 .people {
   font-weight: 500;
