@@ -184,6 +184,7 @@ ul {
   background-color: var(--accent-color);
   border-color: transparent;
   color: var(--primary-white-color);
+  box-shadow: var(--primary-button-shadow);
   cursor: pointer;
 }
 
