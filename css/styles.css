@@ -83,10 +83,6 @@ ul {
   margin-left: 50px;
 }
 
-/* .navi-item {
-  outline: 1px solid tomato;
-} */
-
 .navi-list {
   margin-left: 85px;
   padding: 0px;
@@ -100,9 +96,6 @@ ul {
 }
 
 .navi-link {
-  /* display: block;
-  padding-top: 32px;
-  padding-bottom: 32px; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -132,6 +125,10 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.addres-img {
+  vertical-align: middle;
 }
 /* КНОПКА */
 .btn {
